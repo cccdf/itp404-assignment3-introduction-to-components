@@ -8,6 +8,6 @@ export default function SubReddit(props) {
       <p>Score: {result.data.score}</p>
       <p>Ups: {result.data.ups.toLocaleString()}</p>
       <p>Comments: {num_comments}</p>
-      <p>Subreddit_Subcribers: {result.data.subreddit_subscribers}</p>
+      <p>Subreddit Subcribers: {result.data.subreddit_subscribers}</p>
   </div>;
 }
