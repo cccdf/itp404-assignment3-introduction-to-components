@@ -25,7 +25,7 @@ async componentDidMount(){
 render(){
     return(
       <div>
-        <p className='numberofResult'>{this.state.results.length} results of NBA subreddit</p>
+        <p className='numberofResult'>{this.state.results.length} results</p>
         {this.state.results.map((result) => {
           return <Subcribers result={result} key={result.id}></Subcribers>
         })[0]}
