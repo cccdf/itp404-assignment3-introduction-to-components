@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import getSubReddit from'./RedditApi';
 import  SubReddit from './SubReddit';
@@ -19,13 +18,11 @@ async componentDidMount(){
   let response = await getSubReddit();
   let results = response.data.children;
   this.setState({results: results, loading: false});
-  // console.log(this.state.results[0].data.subreddit_subscribers);
+  
   
 }
 
 render(){
-  // console.log(this.state.results);
-  
     return(
       <div>
         <p>{this.state.results.length} Results of NBA subreddit</p>
