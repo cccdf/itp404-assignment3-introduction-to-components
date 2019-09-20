@@ -24,6 +24,7 @@ class App extends React.Component{
     let response = await getSubReddit(searchValue);
     let results = response.data.children;
     this.state.previousSearches.push(searchValue);
+    this.state.readCount++;
     this.setState({results, loading: false});
   }
 
